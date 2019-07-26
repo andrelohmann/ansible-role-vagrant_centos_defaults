@@ -1,0 +1,19 @@
+---
+- name: upgrade all packages
+  yum:
+    name: '*'
+    state: latest
+
+- name: install packages
+  yum:
+    name: "{{ yum_packages }}"
+    state: latest
+
+- name: add colored prompt
+  blockinfile:
+    path: /etc/bashrc
+    marker: "# {mark} ANSIBLE MANAGED BLOCK"
+    block: |
+      export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+
+...

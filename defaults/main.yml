@@ -1,0 +1,6 @@
+---
+yum_packages:
+- nano
+- wget
+- htop
+...

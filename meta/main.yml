@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  role_name: vagrant_centos_defaults
+  author: andrelohmann
+  description: ansible galaxy role to be used in combination with vagrant centos/7 boxes, to setup colored prompt and install some base packages
+  company: smartformer UG
+
+  license: MIT
+
+  min_ansible_version: 2.7
+
+  platforms:
+    - name: EL
+      versions:
+      - 7
+
+  galaxy_tags:
+  - vagrant
+
+dependencies: []
+...
